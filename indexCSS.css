@@ -1,10 +1,21 @@
 @charset "utf-8";
 body {
-background-color: powderblue;
+	line-height: 140%;
+	position: relative;
+	background-color: gray;
 }
 h1 {
-color: blue;
+	color: orange;
+	font-style: oblique;
+}
+h2 {
+	color: orange;
+	font-style: oblique;
+}
+h3{
+	color: orange;
+	font-style: oblique;
 }
 p {
-color: red;
+	color: black;
 }
