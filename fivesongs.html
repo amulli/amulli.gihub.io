@@ -1,1 +1,61 @@
-
+<html>
+<head>
+	<title>Song Data</title>
+	<link rel="stylesheet" href="indexCSS.css">
+  <script>
+    var songs = [
+      {
+        "Title": ""
+        "Artist": ""
+        "Genre": ""
+      },
+      {
+        "Title": ""
+        "Artist": ""
+        "Genre": ""
+      },
+      {
+        "Title": ""
+        "Artist": ""
+        "Genre": ""
+      },
+      {
+        "Title": ""
+        "Artist": ""
+        "Genre": ""
+      },
+      {
+        "Title": ""
+        "Artist": ""
+        "Genre": ""
+      }
+      ];
+  </script>
+   </head>
+  <body>
+    <h1>First five songs on my playlist</h1>
+    <table>
+        <thead>
+          <tr><th>Title</th>Artist</th>Genre</th></tr>
+        </thead>
+        <tbody id="songlist>
+        </tbody>
+      </table>
+                   <script>
+                   var text = "";
+                   for (var s in songs) {
+				                if (songs.hasOwnProperty(s)) {
+					              var obj = users[s];
+					              for (var x in obj) {
+						              if (obj.hasOwnProperty(x)) {
+							            text += "<tr><td align='right'>" + x + "</td><td>" + obj[x] + "</td></tr>";
+							/*document.write(y + " -> " + obj[y] + '\n');*/
+						              }
+					              }
+					        text += "<tr><td>" + obj['Title'] + " " + obj['Artist'] + "</td><td>" + obj['Genre'] + "</td></tr>";
+				                }
+			              }
+                    document.getElementById("songlist").innerHTML = text;
+                   </script>
+  </body>
+</html>
