@@ -7,29 +7,29 @@
       {
         "Title": "a",
         "Artist": "a",
-        "Genre": "a",
+        "Genre": "a"
       },
       {
         "Title": "b",
         "Artist": "b",
-        "Genre": "b",
+        "Genre": "b"
       },
       {
         "Title": "c",
         "Artist": "c",
-        "Genre": "c",
+        "Genre": "c"
       },
       {
         "Title": "d",
         "Artist": "d",
-        "Genre": "d",
+        "Genre": "d"
       },
       {
         "Title": "e",
         "Artist": "e",
-        "Genre": "e",
+        "Genre": "e"
       }
-      ];
+    ];
   </script>
 </head>
 
@@ -53,7 +53,7 @@
   for (var s in songs) {
 		if (songs.hasOwnProperty(s)) {
         var obj = songs[s];
-				text += "<tr><td>" + obj['Title'] + "</td><td>" + obj['Artist'] + "</td><td>" + obj['Genre'] + "</td></tr">
+				text += "<tr><td>" + obj['Title'] + "</td><td>" + obj['Artist'] + "</td><td>" + obj['Genre'] + "</td></tr>"
 		}
 	}
   document.getElementById("songlist").innerHTML = text;
