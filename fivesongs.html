@@ -31,28 +31,33 @@
       }
       ];
   </script>
-   </head>
-  <body>
-    <h1>First five songs on my playlist</h1>
-    <table border=1 class="center">
+</head>
+
+<body>
+  <h1>First five songs on my playlist</h1>
+
+  <table border=1 class="center">
 	<thead>
-          <tr>
-		  <th>Title</th><th>Artist</th><th>Genre</th>
-		</tr>
-        </thead> 
-        <tbody id="songlist>
-        </tbody>
-      </table>
-                   <script>
-                   var text = " "
-                   for (var s in songs) {
-			if (songs.hasOwnProperty(s)) {
-				var obj = songs[s];
-				text += "<tr><td>" + obj['Title'] + "</td><td>" + obj['Artist'] + "</td><td>" 
-					+ obj['Genre'] + </td></tr>
-						              }
-					              }
-			document.getElementById("songlist").innerHTML = text;
+      <tr>
+		    <th>Title</th><th>Artist</th><th>Genre</th>
+      </tr>
+  </thead> 
+  <tbody id="songlist">
+
+  </tbody>
+  </table>
+
+<script>
+
+  var text = " "
+  for (var s in songs) {
+		if (songs.hasOwnProperty(s)) {
+        var obj = songs[s];
+				text += "<tr><td>" + obj['Title'] + "</td><td>" + obj['Artist'] + "</td><td>" + obj['Genre'] + "</td></tr">
+		}
+	}
+  document.getElementById("songlist").innerHTML = text;
 </script>	
-  </body>
+
+</body>
 </html>
