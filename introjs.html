@@ -1,37 +1,57 @@
 <html>
 <head>
-  <title>First Javascript</title>
-  #square{
-	width: 100px;
-	height: 100px;
-	background: pink;
-	}
-  #square:hover{
-	cursor:pointer;
-	}
+	<title>First Javascript</title>
+	<link rel="stylesheet" href="indexCSS.css">
+	<style type="text/css">
+		#square {
+			height: 180px;
+			width: 180px;
+			background: pink;
+		}
+
+		div {
+			margin-bottom: 20px;
+		}
+
+		.round {
+			border-radius: 20px;
+		}
+
+		#square:hover{
+			cursor: pointer;
+		}
+		
+	</style>
 </head>
+<body>
+
+<div id="test" </div>
+
 <script>
 
-document.getElementById("test").innerHTML = "Hello by ID";
-// document.getElementsByTagName("div")[0].innerHTML = "Hello by Tag";
-// document.getElementsByClassName("t_class")[0].innerHTML = "Hello by Class";
+document.getElementById("test").innerHTML = "JS INTRODUCTION.";
+
 
 </script>
 	<div id="square" onclick="show_sentence()"></div>
 
-	<div>
-		<p> Hello, this is inside a PPPPP tag. </p>
-	</div>
-
-	<!-- for your exercise, comment this line out.  -->
-	<button onclick="show_sentence()">Put the Sentence</button> 
 
 <script>
 
 function show_sentence(){
-	document.getElementById("square").innerHTML = document.getElementsByTagName("p")[0].innerHTML;
+	document.getElementById("square").innerHTML = "This was really confusing.";
 }
 
 </script>
+	<button onclick="goBack()">Go Back</button>
 
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+
+</body>
+</html>
+</body>
 </html>

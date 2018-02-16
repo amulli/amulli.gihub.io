@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>Song Data</title>
+	<link rel="stylesheet" href="indexCSS.css">
+  <script>
+    var songs = [
+      {
+        "Title": "a",
+        "Artist": "a",
+        "Genre": "a",
+      },
+      {
+        "Title": "b",
+        "Artist": "b",
+        "Genre": "b",
+      },
+      {
+        "Title": "c",
+        "Artist": "c",
+        "Genre": "c",
+      },
+      {
+        "Title": "d",
+        "Artist": "d",
+        "Genre": "d",
+      },
+      {
+        "Title": "e",
+        "Artist": "e",
+        "Genre": "e",
+      }
+      ];
+  </script>
+   </head>
+  <body>
+    <h1>First five songs on my playlist</h1>
+    <table border=1 class="center">
+	<thead>
+          <tr>
+		  <th>Title</th><th>Artist</th><th>Genre</th>
+		</tr>
+        </thead> 
+        <tbody id="songlist>
+        </tbody>
+      </table>
+                   <script>
+                   var text = " "
+                   for (var s in songs) {
+			if (songs.hasOwnProperty(s)) {
+				var obj = songs[s];
+				text += "<tr><td>" + obj['Title'] + "</td><td>" + obj['Artist'] + "</td><td>" 
+					+ obj['Genre'] + </td></tr>
+						              }
+					              }
+			document.getElementById("songlist").innerHTML = text;
+</script>	
+  </body>
+</html>
