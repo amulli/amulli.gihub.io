@@ -44,7 +44,7 @@
   <table border=1 class="center">
 	<thead>
       <tr>
-		    <th>Title</th><th>Artist</th><th>Genre</th>
+	      <th>Title</th><th>Artist</th><th>Genre</th><th>Time</th>
       </tr>
   </thead> 
   <tbody id="songlist">
@@ -58,7 +58,7 @@
   for (var s in songs) {
 		if (songs.hasOwnProperty(s)) {
         var obj = songs[s];
-				text += "<tr><td>" + obj['Title'] + "</td><td>" + obj['Artist'] + "</td><td>" + obj['Genre'] + "</td></tr>"
+				text += "<tr><td>" + obj['Title'] + "</td><td>" + obj['Artist'] + "</td><td>" + obj['Genre'] + "</td><td>" + obj['Title'] + "</td></tr>"
 		}
 	}
   document.getElementById("songlist").innerHTML = text;
