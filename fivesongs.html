@@ -58,7 +58,7 @@
   for (var s in songs) {
 		if (songs.hasOwnProperty(s)) {
         var obj = songs[s];
-				text += "<tr><td>" + obj['Title'] + "</td><td>" + obj['Artist'] + "</td><td>" + obj['Genre'] + "</td><td>" + obj['Title'] + "</td></tr>"
+				text += "<tr><td>" + obj['Title'] + "</td><td>" + obj['Artist'] + "</td><td>" + obj['Genre'] + "</td><td>" + obj['Time'] + "</td></tr>"
 		}
 	}
   document.getElementById("songlist").innerHTML = text;
