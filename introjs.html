@@ -50,10 +50,10 @@ function goBack() {
     window.history.back();
 }
 </script>
-	<button onclick="changeColor()">Change Color</button>
+	<button onclick="changeColor('green');">Change Color</button>
 <script>
-function changeColor() {
-	document.getElementById("square").style.backgroundColor = "lightblue";
+function changeColor(color) {
+	document.getElementById("square").style.backgroundColor = color;
 }
 </script>
 </body>
