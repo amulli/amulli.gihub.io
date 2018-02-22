@@ -41,7 +41,7 @@
 <body>
   <h1>First five songs on my playlist</h1>
 
-  <table border=1 class="center">
+  <table id="myTable">
 	<thead>
       <tr>
 	      <th>Title</th><th>Artist</th><th>Genre</th><th>Time</th>
@@ -50,19 +50,33 @@
   <tbody id="songlist">
 
   </tbody>
+  <thead>
+    <tr>
+      <th>Total Songs</th><th>Total Artists</th><th>Total Song Time</th>
+    </tr>
+  </thead>
+  <tbody id="songstats">
+
+  </tbody>
   </table>
 
 <script>
 
+  var count = 0;
+  var stats = " "
   var text = " "
   for (var s in songs) {
 		if (songs.hasOwnProperty(s)) {
+        ++count;
         var obj = songs[s];
 				text += "<tr><td>" + obj['Title'] + "</td><td>" + obj['Artist'] + "</td><td>" + obj['Genre'] + "</td><td>" + obj['Time'] + "</td></tr>"
 		}
 	}
+  stats += "<tr><td>" + count + "</td><td>" + count + "</td><td>" + count + "</td></tr>"
+  document.getElementById("songstats").innerHTML = stats;
   document.getElementById("songlist").innerHTML = text;
-</script>	
+
+  
 
 <p> Go back to my <a href="https://amulli.github.io/">Index Page</a>.</p>
 </body>
