@@ -51,7 +51,8 @@
 
   </tbody>
 	</table>
-	<table>
+
+	<table id="statsTable">
   <thead>
     <tr>
       <th>Total Songs</th><th>Total Artists</th><th>Total Song Time</th>
@@ -74,7 +75,7 @@
 				text += "<tr><td>" + obj['Title'] + "</td><td>" + obj['Artist'] + "</td><td>" + obj['Genre'] + "</td><td>" + obj['Time'] + "</td></tr>"
 		}
 	}
-  stats += "<tr><td>" + count + "</td><td>" + count + "</td><td>" + count + "</td></tr>"
+  //stats += "<tr><td>" + count + "</td><td>" + count + "</td><td>" + count + "</td></tr>"
   document.getElementById("songlist").innerHTML = text;
 	 //document.getElementById("songstats").innerHTML = stats;
 
